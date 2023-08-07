@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.contenedor-notas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  background-image: url(./img/fondoMadera.jpg);
+  width: 95vw;
+  height: 95vh;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+#izq,
+#der {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  color: white;
+  border-radius: 50px;
+  background: #deaa46;
+  box-shadow: 5px 5px 4px #bd913c, -5px -5px 4px #ffc451;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 125px;
+  font-size: 50px;
+}
+#buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#buttons button {
+  margin: 4px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* ------------Robado------------- */
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#si:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+#no:hover {
+  background-color: #c42e23;
+  box-shadow: 0px 15px 20px rgba(229, 89, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+/* ------------Robado------------- */
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px;
+}
+@media screen and (max-width: 670px) {
+  .contenedor-notas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    background-image: url(./img/fondoMadera.jpg);
+    width: 95vw;
+    height: 95vh;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  #izq,
+  #der {
+    height: 150px;
+    width: 150px;
+    /*margin: 10px;*/
+    color: white;
+    border-radius: 20px;
+    background: #deaa46;
+    box-shadow: 5px 5px 4px #bd913c, -5px -5px 4px #ffc451;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 65px;
+    font-size: 25px;
+  }
+}

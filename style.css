@@ -43,6 +43,11 @@ span {
   align-items: center;
   margin: 125px;
   font-size: 50px;
+  /* border: solid red 1px; */
+}
+#racha {
+  margin: 0px;
+  color: white;
 }
 #buttons {
   display: flex;
@@ -92,7 +97,8 @@ button:active {
 }
 /* ------------Robado------------- */
 
-h2 {
+h2,
+h3 {
   display: flex;
   justify-content: center;
   color: white;

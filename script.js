@@ -26,13 +26,35 @@ btnNo.addEventListener("click", function () {
   if (numeroAleatorio !== numeroAleatorio2) {
     racha++;
     spanRacha.textContent = racha;
-    console.log(numeroAleatorio + " - " + numeroAleatorio2);
-    console.log(racha);
+    setTimeout(function () {
+      der.style.border = "4px solid #23c483";
+      izq.style.border = "4px solid #23c483";
+      der.style.backgroundColor = "#23c483";
+      izq.style.backgroundColor = "#23c483";
+      setTimeout(function () {
+        der.style.border = "none";
+        izq.style.border = "none";
+        der.style.backgroundColor = "#deaa46";
+        izq.style.backgroundColor = "#deaa46";
+      }, 500);
+    }, 250);
     aleatorios();
   } else {
     console.log("La racha terminó");
     racha = 0;
     spanRacha.textContent = racha;
+    setTimeout(function () {
+      der.style.border = "4px solid #c42e23";
+      izq.style.border = "4px solid #c42e23";
+      der.style.backgroundColor = "#c42e23";
+      izq.style.backgroundColor = "#c42e23";
+      setTimeout(function () {
+        der.style.border = "none";
+        izq.style.border = "none";
+        der.style.backgroundColor = "#deaa46";
+        izq.style.backgroundColor = "#deaa46";
+      }, 250);
+    }, 125);
     aleatorios();
   }
 });
@@ -40,13 +62,35 @@ btnSi.addEventListener("click", function () {
   if (numeroAleatorio === numeroAleatorio2) {
     racha++;
     spanRacha.textContent = racha;
-    console.log(numeroAleatorio + " - " + numeroAleatorio2);
-    console.log(racha);
+    setTimeout(function () {
+      der.style.border = "4px solid #23c483";
+      izq.style.border = "4px solid #23c483";
+      der.style.backgroundColor = "#23c483";
+      izq.style.backgroundColor = "#23c483";
+      setTimeout(function () {
+        der.style.border = "none";
+        izq.style.border = "none";
+        der.style.backgroundColor = "#deaa46";
+        izq.style.backgroundColor = "#deaa46";
+      }, 250);
+    }, 125);
     aleatorios();
   } else {
     console.log("La racha terminó");
     racha = 0;
     spanRacha.textContent = racha;
+    setTimeout(function () {
+      der.style.border = "4px solid #c42e23";
+      izq.style.border = "4px solid #c42e23";
+      der.style.backgroundColor = "#c42e23";
+      izq.style.backgroundColor = "#c42e23";
+      setTimeout(function () {
+        der.style.border = "none";
+        izq.style.border = "none";
+        der.style.backgroundColor = "#deaa46";
+        izq.style.backgroundColor = "#deaa46";
+      }, 250);
+    }, 125);
     aleatorios();
   }
 });

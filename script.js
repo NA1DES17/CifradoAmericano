@@ -95,16 +95,19 @@ btnSi.addEventListener("click", function () {
   }
 });
 
-//------------------
-// let spanTest = document.getElementById("span-test");
-// let btnTest = document.getElementById("btn-test");
+//----------------------
+let audio = new Audio("sound.mp3");
+// let botonS = document.getElementById("sonido");
 
-// let n1 = Math.floor(Math.random() * 7);
-// let n2 = Math.floor(Math.random() * 7);
-// spanTest.textContent = n1;
-// //spanDer.textContent = notas[n2];
-
-// btnTest.addEventListener("click", function () {
-//   n1 = Math.floor(Math.random() * 7);
-//   spanTest.textContent = n1;
+// botonS.addEventListener("click", function () {
+//   audio.play();
 // });
+//---------------------
+let rachas = [10, 20, 30, 40, 50, 60, 70, 60, 80, 90, 100];
+
+function sonidoRacha() {
+  if (racha === 10) {
+    audio.play();
+  }
+}
+sonidoRacha();
